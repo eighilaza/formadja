@@ -1,6 +1,6 @@
 #!/bin/bash
 
-openssl dhparam -out /etc/nginx/ssl/dhparam.pem 2048
+openssl dhparam -out /etc/nginx/dhparam.pem 2048
 
 cp ./nginx/ighilaza.com.conf /etc/nginx/sites-available
 ln -s /etc/nginx/sites-available/ighilaza.com.conf /etc/nginx/sites-enabled/
